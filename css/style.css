@@ -1,0 +1,122 @@
+ .feature-card:hover .feature-icon {
+            transform: translateY(-5px);
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        .navbar-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .sidebar-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .sidebar {
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+         /* Animations */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-float-1 {
+        animation: float 8s ease-in-out infinite;
+    }
+    .animate-float-2 {
+        animation: float 10s ease-in-out infinite 2s;
+    }
+    .animate-float-3 {
+        animation: float 12s ease-in-out infinite 1s;
+    }
+    .animate-float-4 {
+        animation: float 9s ease-in-out infinite 0.5s;
+    }
+    .animate-float-5 {
+        animation: float 7s ease-in-out infinite 1.5s;
+    }
+    .animate-float-6 {
+        animation: float 11s ease-in-out infinite;
+    }
+    
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+    }
+    .delay-100 {
+        animation-delay: 0.1s;
+    }
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+    .delay-300 {
+        animation-delay: 0.3s;
+    }
+    .delay-400 {
+        animation-delay: 0.4s;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1023px) {
+        #hero {
+            background-image: radial-gradient(circle at 70% 30%, rgba(56, 189, 248, 0.1) 0%, transparent 50%);
+        }
+    }
+    
+    @media (max-width: 767px) {
+        #hero {
+            background-image: radial-gradient(circle at 70% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 50%);
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    }
+    

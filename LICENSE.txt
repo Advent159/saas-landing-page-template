@@ -1,0 +1,40 @@
+
+---
+
+## ⚠️ Contact Section Info
+
+This template intentionally does **not** include an active contact form to keep it flexible for all buyers.
+
+> 💡 You can easily integrate your own using services like:
+> - [Formsubmit](https://formsubmit.io)
+> - [Getform](https://getform.io)
+> - [Netlify Forms](https://docs.netlify.com/forms/setup/)
+> - Or your own backend
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5  
+- Tailwind CSS v3+  
+- Vanilla JavaScript
+
+---
+
+## 📄 License
+
+This template is under the **Personal Use License**.  
+✅ Free to use for personal and client projects  
+❌ Reselling or redistribution of this template (modified or not) is prohibited
+
+> See [LICENSE.txt](./LICENSE.txt) for more details.
+
+---
+
+## 🙌 Credits
+
+Built with 💙 by **JustcallmeAlek**  
+Follow for more templates: [@YourHandle](https://your-link)
+
+---
+
